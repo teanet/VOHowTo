@@ -13,17 +13,6 @@
     }
   ],
   "defaultOptions" : {
-    "commandLineArgumentEntries" : [
-      {
-        "argument" : "v4ios_uitests"
-      }
-    ],
-    "environmentVariableEntries" : [
-      {
-        "key" : "v4ios_uitests",
-        "value" : "YES"
-      }
-    ],
     "targetForVariableExpansion" : {
       "containerPath" : "container:VOHowTo.xcodeproj",
       "identifier" : "73DE240C2C1D52ED00FF7B35",

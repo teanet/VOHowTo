@@ -2,17 +2,18 @@
 platform :ios, '15.0'
 
 target 'VOHowTo' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+	# Comment the next line if you don't want to use dynamic frameworks
+	use_frameworks!
 
-  # Pods for VOHowTo
+	# Pods for VOHowTo
 
-  target 'VOHowToTests' do
-    pod 'KIF'
-  end
+	target 'VOHowToTests' do
+		pod 'KIF'
+		pod 'Nimble'
+	end
 
-  target 'VOHowToUITests' do
-    # Pods for testing
-  end
+	target 'VOHowToUITests' do
+		pod 'Nimble'
+	end
 
 end
