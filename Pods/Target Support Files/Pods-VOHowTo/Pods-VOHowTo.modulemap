@@ -1,0 +1,6 @@
+framework module Pods_VOHowTo {
+  umbrella header "Pods-VOHowTo-umbrella.h"
+
+  export *
+  module * { export * }
+}

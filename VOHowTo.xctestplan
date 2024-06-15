@@ -1,0 +1,52 @@
+{
+  "configurations" : [
+    {
+      "id" : "F179D8E1-1824-4B8E-BD3C-91787066D4BC",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:VOHowTo.xcodeproj",
+          "identifier" : "73DE240C2C1D52ED00FF7B35",
+          "name" : "VOHowTo"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "v4ios_uitests"
+      }
+    ],
+    "environmentVariableEntries" : [
+      {
+        "key" : "v4ios_uitests",
+        "value" : "YES"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:VOHowTo.xcodeproj",
+      "identifier" : "73DE240C2C1D52ED00FF7B35",
+      "name" : "VOHowTo"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:VOHowTo.xcodeproj",
+        "identifier" : "73DE24222C1D52EF00FF7B35",
+        "name" : "VOHowToTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:VOHowTo.xcodeproj",
+        "identifier" : "73DE242C2C1D52EF00FF7B35",
+        "name" : "VOHowToUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

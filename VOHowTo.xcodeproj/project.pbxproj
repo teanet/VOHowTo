@@ -16,6 +16,10 @@
 		73DE24282C1D52EF00FF7B35 /* VOHowToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24272C1D52EF00FF7B35 /* VOHowToTests.swift */; };
 		73DE24322C1D52EF00FF7B35 /* VOHowToUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24312C1D52EF00FF7B35 /* VOHowToUITests.swift */; };
 		73DE24342C1D52EF00FF7B35 /* VOHowToUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24332C1D52EF00FF7B35 /* VOHowToUITestsLaunchTests.swift */; };
+		73DE24412C1D530200FF7B35 /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24402C1D530200FF7B35 /* ProcessInfo.swift */; };
+		83AF32E6A861638FA7F63C9E /* Pods_VOHowTo_VOHowToTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFF95089AFB82F76FA38997 /* Pods_VOHowTo_VOHowToTests.framework */; };
+		C3E4F0472BB29CC178723D19 /* Pods_VOHowTo_VOHowToUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF285822C55D130197A54DD /* Pods_VOHowTo_VOHowToUITests.framework */; };
+		F3B1F4535A91AA5227C0B103 /* Pods_VOHowTo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F00C5E2C879CB332B5D97B /* Pods_VOHowTo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1843441F67859E908A8F4115 /* Pods-VOHowToTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowToTests.release.xcconfig"; path = "Target Support Files/Pods-VOHowToTests/Pods-VOHowToTests.release.xcconfig"; sourceTree = "<group>"; };
+		25ED7C7F34D38AD7B319B9B2 /* Pods-VOHowTo-VOHowToUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo-VOHowToUITests.release.xcconfig"; path = "Target Support Files/Pods-VOHowTo-VOHowToUITests/Pods-VOHowTo-VOHowToUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2ECBD5B5657E5230A05C2F4B /* Pods-VOHowToTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowToTests.debug.xcconfig"; path = "Target Support Files/Pods-VOHowToTests/Pods-VOHowToTests.debug.xcconfig"; sourceTree = "<group>"; };
 		73DE240D2C1D52ED00FF7B35 /* VOHowTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOHowTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,16 @@
 		73DE242D2C1D52EF00FF7B35 /* VOHowToUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOHowToUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE24312C1D52EF00FF7B35 /* VOHowToUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOHowToUITests.swift; sourceTree = "<group>"; };
 		73DE24332C1D52EF00FF7B35 /* VOHowToUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOHowToUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		73DE24402C1D530200FF7B35 /* ProcessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfo.swift; sourceTree = "<group>"; };
+		73DE24422C1D546600FF7B35 /* VOHowTo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = VOHowTo.xctestplan; sourceTree = "<group>"; };
+		792B926112C06BAF46A1048F /* Pods-VOHowTo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo.debug.xcconfig"; path = "Target Support Files/Pods-VOHowTo/Pods-VOHowTo.debug.xcconfig"; sourceTree = "<group>"; };
+		A8F00C5E2C879CB332B5D97B /* Pods_VOHowTo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOHowTo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC84842F258C2A128A4C207D /* Pods-VOHowTo-VOHowToTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo-VOHowToTests.release.xcconfig"; path = "Target Support Files/Pods-VOHowTo-VOHowToTests/Pods-VOHowTo-VOHowToTests.release.xcconfig"; sourceTree = "<group>"; };
+		C247515696F0DE3621E7B9CE /* Pods-VOHowTo-VOHowToUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo-VOHowToUITests.debug.xcconfig"; path = "Target Support Files/Pods-VOHowTo-VOHowToUITests/Pods-VOHowTo-VOHowToUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAF285822C55D130197A54DD /* Pods_VOHowTo_VOHowToUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOHowTo_VOHowToUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFF95089AFB82F76FA38997 /* Pods_VOHowTo_VOHowToTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOHowTo_VOHowToTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A16B03BB1FB637B1CB50DC /* Pods-VOHowTo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo.release.xcconfig"; path = "Target Support Files/Pods-VOHowTo/Pods-VOHowTo.release.xcconfig"; sourceTree = "<group>"; };
+		F39CB6C65B15C0C02C145ACB /* Pods-VOHowTo-VOHowToTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo-VOHowToTests.debug.xcconfig"; path = "Target Support Files/Pods-VOHowTo-VOHowToTests/Pods-VOHowTo-VOHowToTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3B1F4535A91AA5227C0B103 /* Pods_VOHowTo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF32E6A861638FA7F63C9E /* Pods_VOHowTo_VOHowToTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E4F0472BB29CC178723D19 /* Pods_VOHowTo_VOHowToUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +99,13 @@
 		73DE24042C1D52ED00FF7B35 = {
 			isa = PBXGroup;
 			children = (
+				73DE24422C1D546600FF7B35 /* VOHowTo.xctestplan */,
 				73DE240F2C1D52ED00FF7B35 /* VOHowTo */,
 				73DE24262C1D52EF00FF7B35 /* VOHowToTests */,
 				73DE24302C1D52EF00FF7B35 /* VOHowToUITests */,
 				73DE240E2C1D52ED00FF7B35 /* Products */,
+				B9B865762DF295364838DDD7 /* Pods */,
+				996726568AD1863E0B1593EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +125,7 @@
 				73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */,
 				73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */,
 				73DE24142C1D52ED00FF7B35 /* ViewController.swift */,
+				73DE24402C1D530200FF7B35 /* ProcessInfo.swift */,
 				73DE24162C1D52ED00FF7B35 /* Main.storyboard */,
 				73DE24192C1D52EF00FF7B35 /* Assets.xcassets */,
 				73DE241B2C1D52EF00FF7B35 /* LaunchScreen.storyboard */,
@@ -127,6 +151,31 @@
 			path = VOHowToUITests;
 			sourceTree = "<group>";
 		};
+		996726568AD1863E0B1593EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8F00C5E2C879CB332B5D97B /* Pods_VOHowTo.framework */,
+				CAF285822C55D130197A54DD /* Pods_VOHowTo_VOHowToUITests.framework */,
+				CAFF95089AFB82F76FA38997 /* Pods_VOHowTo_VOHowToTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B865762DF295364838DDD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				792B926112C06BAF46A1048F /* Pods-VOHowTo.debug.xcconfig */,
+				F1A16B03BB1FB637B1CB50DC /* Pods-VOHowTo.release.xcconfig */,
+				C247515696F0DE3621E7B9CE /* Pods-VOHowTo-VOHowToUITests.debug.xcconfig */,
+				25ED7C7F34D38AD7B319B9B2 /* Pods-VOHowTo-VOHowToUITests.release.xcconfig */,
+				2ECBD5B5657E5230A05C2F4B /* Pods-VOHowToTests.debug.xcconfig */,
+				1843441F67859E908A8F4115 /* Pods-VOHowToTests.release.xcconfig */,
+				F39CB6C65B15C0C02C145ACB /* Pods-VOHowTo-VOHowToTests.debug.xcconfig */,
+				AC84842F258C2A128A4C207D /* Pods-VOHowTo-VOHowToTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73DE24372C1D52EF00FF7B35 /* Build configuration list for PBXNativeTarget "VOHowTo" */;
 			buildPhases = (
+				3AE35E49F3511229387C96B7 /* [CP] Check Pods Manifest.lock */,
 				73DE24092C1D52ED00FF7B35 /* Sources */,
 				73DE240A2C1D52ED00FF7B35 /* Frameworks */,
 				73DE240B2C1D52ED00FF7B35 /* Resources */,
@@ -151,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73DE243A2C1D52EF00FF7B35 /* Build configuration list for PBXNativeTarget "VOHowToTests" */;
 			buildPhases = (
+				E7376657A58C563C9A9D0F25 /* [CP] Check Pods Manifest.lock */,
 				73DE241F2C1D52EF00FF7B35 /* Sources */,
 				73DE24202C1D52EF00FF7B35 /* Frameworks */,
 				73DE24212C1D52EF00FF7B35 /* Resources */,
+				03C89BC1CA8914FBC10C4C41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73DE243D2C1D52EF00FF7B35 /* Build configuration list for PBXNativeTarget "VOHowToUITests" */;
 			buildPhases = (
+				1575845AC3D6BAF58DEB70AF /* [CP] Check Pods Manifest.lock */,
 				73DE24292C1D52EF00FF7B35 /* Sources */,
 				73DE242A2C1D52EF00FF7B35 /* Frameworks */,
 				73DE242B2C1D52EF00FF7B35 /* Resources */,
@@ -253,6 +306,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03C89BC1CA8914FBC10C4C41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VOHowTo-VOHowToTests/Pods-VOHowTo-VOHowToTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VOHowTo-VOHowToTests/Pods-VOHowTo-VOHowToTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VOHowTo-VOHowToTests/Pods-VOHowTo-VOHowToTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1575845AC3D6BAF58DEB70AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VOHowTo-VOHowToUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE35E49F3511229387C96B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VOHowTo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7376657A58C563C9A9D0F25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VOHowTo-VOHowToTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73DE24092C1D52ED00FF7B35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +400,7 @@
 				73DE24152C1D52ED00FF7B35 /* ViewController.swift in Sources */,
 				73DE24112C1D52ED00FF7B35 /* AppDelegate.swift in Sources */,
 				73DE24132C1D52ED00FF7B35 /* SceneDelegate.swift in Sources */,
+				73DE24412C1D530200FF7B35 /* ProcessInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +493,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -416,7 +555,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -437,6 +575,7 @@
 		};
 		73DE24382C1D52EF00FF7B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 792B926112C06BAF46A1048F /* Pods-VOHowTo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,14 +596,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nazabore.VOHowTo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		73DE24392C1D52EF00FF7B35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A16B03BB1FB637B1CB50DC /* Pods-VOHowTo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,14 +629,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nazabore.VOHowTo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		73DE243B2C1D52EF00FF7B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F39CB6C65B15C0C02C145ACB /* Pods-VOHowTo-VOHowToTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,15 +653,20 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nazabore.VOHowToTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOHowTo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VOHowTo";
 			};
 			name = Debug;
 		};
 		73DE243C2C1D52EF00FF7B35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC84842F258C2A128A4C207D /* Pods-VOHowTo-VOHowToTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,15 +678,20 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.nazabore.VOHowToTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOHowTo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VOHowTo";
 			};
 			name = Release;
 		};
 		73DE243E2C1D52EF00FF7B35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C247515696F0DE3621E7B9CE /* Pods-VOHowTo-VOHowToUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +710,7 @@
 		};
 		73DE243F2C1D52EF00FF7B35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25ED7C7F34D38AD7B319B9B2 /* Pods-VOHowTo-VOHowToUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
