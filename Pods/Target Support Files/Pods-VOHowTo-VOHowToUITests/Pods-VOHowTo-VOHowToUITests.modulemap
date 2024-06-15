@@ -1,6 +1,0 @@
-framework module Pods_VOHowTo_VOHowToUITests {
-  umbrella header "Pods-VOHowTo-VOHowToUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
