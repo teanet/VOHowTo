@@ -2,7 +2,8 @@ import UIKit
 
 final class VC3: BaseVC<VM3> {
 
-	let label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
+	private let label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
+	private let label2 = UILabel(frame: CGRect(x: 100, y: 200, width: 100, height: 100))
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -20,15 +21,16 @@ final class VC3: BaseVC<VM3> {
 			self.label.accessibilityTraits = .button
 		}
 
-		let label2 = UILabel(frame: CGRect(x: 100, y: 200, width: 100, height: 100))
-		label2.text = "Some other label"
-		self.view.addSubview(label2)
+		self.label2.accessibilityIdentifier = "label2"
+		self.label2.text = "Some other label"
+		self.view.addSubview(self.label2)
 
 		let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.tap))
 		self.label.addGestureRecognizer(tapGR)
 
 		self.customAccessibilityElementsBlock = { [weak self] in
-			[self?.label, label2]
+			/// если мы хотим вручную задать порядок элементов доступности, с учетом их видимости
+			[self?.label, self?.label2]
 		}
 	}
 

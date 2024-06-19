@@ -9,6 +9,7 @@ target 'VOHowTo' do
 
 	target 'VOHowToTests' do
 		pod 'KIF'
+		pod 'KIF/IdentifierTests'
 		pod 'Nimble'
 		pod 'AccessibilitySnapshot'
 	end

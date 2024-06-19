@@ -18,6 +18,8 @@ PODS:
   - KIF (3.9.0):
     - KIF/Core (= 3.9.0)
   - KIF/Core (3.9.0)
+  - KIF/IdentifierTests (3.9.0):
+    - KIF/Core
   - Nimble (13.3.0):
     - CwlPreconditionTesting (~> 2.2.0)
   - SnapshotTesting (1.9.0)
@@ -25,6 +27,7 @@ PODS:
 DEPENDENCIES:
   - AccessibilitySnapshot
   - KIF
+  - KIF/IdentifierTests
   - Nimble
 
 SPEC REPOS:
@@ -50,6 +53,6 @@ SPEC CHECKSUMS:
   Nimble: 3ac6c6b0b7e9835d1540b6507d8054b12a415536
   SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
 
-PODFILE CHECKSUM: d109ba66358bae732c0a5382ec3a9bc73f012919
+PODFILE CHECKSUM: 0f26265e33082f3fd7e370ac395e2d495ec23b04
 
 COCOAPODS: 1.15.2

@@ -5,6 +5,11 @@ import Nimble
 
 final class VOHowToTests: XCTestCase {
 
+	public private(set) lazy var uiTester: UITester = {
+		let tester = UITester(file: #file, line: #line, delegate: self)
+		return tester
+	}()
+
 	private weak var presentedVC: UIViewController?
 
 	override func setUpWithError() throws {
@@ -15,7 +20,7 @@ final class VOHowToTests: XCTestCase {
 		self.presentedVC?.dgs_removeFromParent()
 	}
 
-	func test_vc_() throws {
+	func test_проверяем_корректные_label_для_vc() throws {
 		let vc = VC3(vm: VM3())
 		self.showChild(vc)
 
@@ -23,11 +28,39 @@ final class VOHowToTests: XCTestCase {
 			.label("Some text. Button."),
 			.label("Some other label"),
 		]))
+
+		// скрываем в реальном времени один из элементов
+		try self.uiTester.view(identifier: "label2").isHidden = true
+
+		// иерархия автоматически пересчитывается
+		expect(vc.view).to(haveAccessibilityHierarchyOfElements([
+			.label("Some text. Button."),
+		]))
 	}
 
 	func showChild(_ vc: UIViewController) {
 		self.presentedVC = vc
 		UIApplication.shared.activeSceneKeyWindow?.rootViewController?.showChild(vc)
+	}
+}
+
+public final class UITester {
+	private let testActor: KIFUITestActor
+
+	init(file: String, line: Int, delegate: KIFTestActorDelegate) {
+		self.testActor = KIFUITestActor(inFile: file, atLine: line, delegate: delegate)
+	}
+
+	@discardableResult
+	public func view<T: UIView>(identifier: String) throws -> T {
+		var view: UIView?
+		try self.testActor.tryFinding(
+			nil,
+			view: &view,
+			withIdentifier: identifier,
+			tappable: false
+		)
+		return try XCTUnwrap(view as? T)
 	}
 }
 
