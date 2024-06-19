@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7301C9A72C22B724008A8250 /* AccessibilitySnapshotElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9A42C22B723008A8250 /* AccessibilitySnapshotElement.swift */; };
+		7301C9A82C22B724008A8250 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9A52C22B723008A8250 /* UIView+Snapshot.swift */; };
+		7301C9A92C22B724008A8250 /* AccessibilitySnapshotPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9A62C22B723008A8250 /* AccessibilitySnapshotPredicate.swift */; };
+		733A5C202C1D84D10000BAC3 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C1F2C1D84D10000BAC3 /* VC3.swift */; };
+		733A5C232C1D87EB0000BAC3 /* AccessibilityElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */; };
 		73DE24112C1D52ED00FF7B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */; };
 		73DE24132C1D52ED00FF7B35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */; };
 		73DE24152C1D52ED00FF7B35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24142C1D52ED00FF7B35 /* ViewController.swift */; };
@@ -43,6 +48,11 @@
 		1843441F67859E908A8F4115 /* Pods-VOHowToTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowToTests.release.xcconfig"; path = "Target Support Files/Pods-VOHowToTests/Pods-VOHowToTests.release.xcconfig"; sourceTree = "<group>"; };
 		25ED7C7F34D38AD7B319B9B2 /* Pods-VOHowTo-VOHowToUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowTo-VOHowToUITests.release.xcconfig"; path = "Target Support Files/Pods-VOHowTo-VOHowToUITests/Pods-VOHowTo-VOHowToUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2ECBD5B5657E5230A05C2F4B /* Pods-VOHowToTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOHowToTests.debug.xcconfig"; path = "Target Support Files/Pods-VOHowToTests/Pods-VOHowToTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7301C9A42C22B723008A8250 /* AccessibilitySnapshotElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilitySnapshotElement.swift; sourceTree = "<group>"; };
+		7301C9A52C22B723008A8250 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		7301C9A62C22B723008A8250 /* AccessibilitySnapshotPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilitySnapshotPredicate.swift; sourceTree = "<group>"; };
+		733A5C1F2C1D84D10000BAC3 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
+		733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElements.swift; sourceTree = "<group>"; };
 		73DE240D2C1D52ED00FF7B35 /* VOHowTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOHowTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +135,8 @@
 				73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */,
 				73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */,
 				73DE24142C1D52ED00FF7B35 /* ViewController.swift */,
+				733A5C1F2C1D84D10000BAC3 /* VC3.swift */,
+				733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */,
 				73DE24402C1D530200FF7B35 /* ProcessInfo.swift */,
 				73DE24162C1D52ED00FF7B35 /* Main.storyboard */,
 				73DE24192C1D52EF00FF7B35 /* Assets.xcassets */,
@@ -137,6 +149,9 @@
 		73DE24262C1D52EF00FF7B35 /* VOHowToTests */ = {
 			isa = PBXGroup;
 			children = (
+				7301C9A42C22B723008A8250 /* AccessibilitySnapshotElement.swift */,
+				7301C9A62C22B723008A8250 /* AccessibilitySnapshotPredicate.swift */,
+				7301C9A52C22B723008A8250 /* UIView+Snapshot.swift */,
 				73DE24272C1D52EF00FF7B35 /* VOHowToTests.swift */,
 			);
 			path = VOHowToTests;
@@ -417,8 +432,10 @@
 			files = (
 				73DE24152C1D52ED00FF7B35 /* ViewController.swift in Sources */,
 				73DE24112C1D52ED00FF7B35 /* AppDelegate.swift in Sources */,
+				733A5C202C1D84D10000BAC3 /* VC3.swift in Sources */,
 				73DE24132C1D52ED00FF7B35 /* SceneDelegate.swift in Sources */,
 				73DE24412C1D530200FF7B35 /* ProcessInfo.swift in Sources */,
+				733A5C232C1D87EB0000BAC3 /* AccessibilityElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +443,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7301C9A92C22B724008A8250 /* AccessibilitySnapshotPredicate.swift in Sources */,
 				73DE24282C1D52EF00FF7B35 /* VOHowToTests.swift in Sources */,
+				7301C9A72C22B724008A8250 /* AccessibilitySnapshotElement.swift in Sources */,
+				7301C9A82C22B724008A8250 /* UIView+Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

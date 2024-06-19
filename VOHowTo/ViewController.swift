@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
 	let label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
 
@@ -23,6 +23,15 @@ class ViewController: UIViewController {
 
 		let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.tap))
 		self.label.addGestureRecognizer(tapGR)
+
+		self.navigationItem.rightBarButtonItems = [
+			UIBarButtonItem(title: "VC3", style: .plain, target: self, action: #selector(self.showVC3)),
+		]
+	}
+
+	@objc private func showVC3() {
+		let vc = VC3(vm: VM3())
+		self.navigationController?.pushViewController(vc, animated: true)
 	}
 
 	@objc private func tap() {
