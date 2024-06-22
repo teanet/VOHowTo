@@ -17,6 +17,15 @@ final class VOHowToTests: XCTestCase {
 		try self.uiTester.tearDownWithError()
 	}
 
+	func test_проверяем_иерахию_простого_контроллера() throws {
+		let vc = ViewController()
+		self.uiTester.showChild(vc)
+
+		expect(vc.view).to(haveAccessibilityHierarchyOfElements([
+			.label("Some text. Button."),
+		]))
+	}
+
 	func test_проверяем_корректные_label_для_vc() throws {
 		let vc = VC3(vm: VM3())
 		self.uiTester.showChild(vc)
