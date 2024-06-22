@@ -71,6 +71,7 @@ final class VC3: BaseVC<VM3> {
 	@objc private func tap() {
 		print("On label tapped")
 		self.label2.isHidden.toggle()
+		UIAccessibility.post(notification: .layoutChanged, argument: nil)
 	}
 
 }

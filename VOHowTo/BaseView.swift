@@ -10,6 +10,7 @@ class BaseView: UIView {
 		get { self.customAccessibilityElementsBlock?()?.accessibilityElements() ?? super.accessibilityElements }
 		set { super.accessibilityElements = newValue }
 	}
+
 }
 
 class BaseVM: NSObject {
