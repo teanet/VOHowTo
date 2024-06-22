@@ -17,26 +17,17 @@ final class VOHowToUITests: XCTestCase {
 	}
 
 	func test_работает_как_тест_и_не_находит_кнопку() throws {
-		let app = XCUIApplication()
-		app.customLaunch()
+		let app = XCUIApplication().customLaunch()
+
 		expect(app.buttons["label_button"].firstMatch.label) == "Some text"
 	}
 
 	func test_работает_как_настоящее_приложение_для_людей_и_там_будет_кнопка() throws {
-		let app = XCUIApplication()
-		app
-			.customLaunch(asUser: true)
+		let app = XCUIApplication().customLaunch(asUser: true)
+
 		expect(app.buttons["label_button"].firstMatch.label) == "Some text"
 	}
 
-	func _testLaunchPerformance() throws {
-		if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-			// This measures how long it takes to launch your application.
-			measure(metrics: [XCTApplicationLaunchMetric()]) {
-				XCUIApplication().launch()
-			}
-		}
-	}
 }
 
 extension XCUIApplication {

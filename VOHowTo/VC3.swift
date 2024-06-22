@@ -38,6 +38,8 @@ final class VC3: BaseVC<VM3> {
 		self.label.backgroundColor = .red
 		self.label.center = self.view.center
 		self.view.addSubview(self.label)
+		let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.tap))
+		self.label.addGestureRecognizer(tapGR)
 
 		if !ProcessInfo.isUITests {
 			self.label.isAccessibilityElement = true
@@ -47,9 +49,6 @@ final class VC3: BaseVC<VM3> {
 		self.label2.accessibilityIdentifier = "label2"
 		self.label2.text = "Some other label"
 		self.view.addSubview(self.label2)
-
-		let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.tap))
-		self.label.addGestureRecognizer(tapGR)
 
 		self.customAccessibilityElementsBlock = { [weak self] in
 			guard let self else { return nil }
@@ -64,8 +63,14 @@ final class VC3: BaseVC<VM3> {
 		}
 	}
 
+	override func accessibilityPerformEscape() -> Bool {
+		self.navigationController?.popViewController(animated: true)
+		return true
+	}
+
 	@objc private func tap() {
 		print("On label tapped")
+		self.label2.isHidden.toggle()
 	}
 
 }
@@ -107,6 +112,7 @@ extension VC3: UICollectionViewDataSource, UICollectionViewDelegate {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BaseCell", for: indexPath)
 		if let cell = cell as? BaseCell {
 			cell.label.text = "\(indexPath.item + 1)"
+			cell.accessibilityIdentifier = "cell_\(indexPath.item)"
 		}
 		return cell
 	}
