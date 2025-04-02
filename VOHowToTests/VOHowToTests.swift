@@ -9,10 +9,6 @@ final class VOHowToTests: XCTestCase {
 		return tester
 	}()
 
-	override func setUpWithError() throws {
-		// Put setup code here. This method is called before the invocation of each test method in the class.
-	}
-
 	override func tearDownWithError() throws {
 		try self.uiTester.tearDownWithError()
 	}
@@ -23,6 +19,7 @@ final class VOHowToTests: XCTestCase {
 
 		expect(vc.view).to(haveAccessibilityHierarchyOfElements([
 			.label("Some text. Button."),
+			.label("SwiftUIButton. Button."),
 		]))
 	}
 

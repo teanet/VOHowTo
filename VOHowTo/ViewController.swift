@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 final class ViewController: UIViewController {
 
@@ -13,7 +14,7 @@ final class ViewController: UIViewController {
 		self.label.accessibilityLabel = "Some text"
 		self.label.isUserInteractionEnabled = true
 		self.label.backgroundColor = .red
-		self.label.center = self.view.center
+		self.label.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
 		self.view.addSubview(self.label)
 
 		if !ProcessInfo.isUITests {
@@ -24,8 +25,15 @@ final class ViewController: UIViewController {
 		let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.tap))
 		self.label.addGestureRecognizer(tapGR)
 
+		let childView = UIHostingController(rootView: SwiftUIView())
+		addChild(childView)
+		childView.view.frame = CGRect(x: 100, y: 200, width: 50, height: 50)
+		self.view.addSubview(childView.view)
+		childView.didMove(toParent: self)
+
 		self.navigationItem.rightBarButtonItems = [
 			UIBarButtonItem(title: "VC3", style: .plain, target: self, action: #selector(self.showVC3)),
+			UIBarButtonItem(title: "Collection", style: .plain, target: self, action: #selector(self.showCollection)),
 		]
 	}
 
@@ -34,8 +42,20 @@ final class ViewController: UIViewController {
 		self.navigationController?.pushViewController(vc, animated: true)
 	}
 
+	@objc private func showCollection() {
+		let vc = CollectionVC(vm: VM3())
+		self.navigationController?.pushViewController(vc, animated: true)
+	}
+
 	@objc private func tap() {
 		print("On label tapped")
 	}
 
+}
+
+struct SwiftUIView: View {
+	var body: some View {
+		Button("Action1") {}
+			.accessibilityLabel("SwiftUIButton")
+	}
 }

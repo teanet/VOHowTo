@@ -14,6 +14,8 @@
 		7301C9AF2C22C0DB008A8250 /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9AE2C22C0DB008A8250 /* AccessibilityLabel.swift */; };
 		733A5C202C1D84D10000BAC3 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C1F2C1D84D10000BAC3 /* VC3.swift */; };
 		733A5C232C1D87EB0000BAC3 /* AccessibilityElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */; };
+		735BA4B12D87EC4800B1083F /* AccessibilityCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BA4B02D87EC3200B1083F /* AccessibilityCollectionView.swift */; };
+		735BA4B32D87EEE500B1083F /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BA4B22D87EEE500B1083F /* CollectionVC.swift */; };
 		73D9650E2C267C880032E3AD /* UITester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9650D2C267C880032E3AD /* UITester.swift */; };
 		73D965102C2696AD0032E3AD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D9650F2C2696AD0032E3AD /* BaseView.swift */; };
 		73DE24112C1D52ED00FF7B35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		7301C9AE2C22C0DB008A8250 /* AccessibilityLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabel.swift; sourceTree = "<group>"; };
 		733A5C1F2C1D84D10000BAC3 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 		733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElements.swift; sourceTree = "<group>"; };
+		735BA4B02D87EC3200B1083F /* AccessibilityCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityCollectionView.swift; sourceTree = "<group>"; };
+		735BA4B22D87EEE500B1083F /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 		73D9650D2C267C880032E3AD /* UITester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITester.swift; sourceTree = "<group>"; };
 		73D9650F2C2696AD0032E3AD /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		73DE240D2C1D52ED00FF7B35 /* VOHowTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOHowTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,11 +144,13 @@
 		73DE240F2C1D52ED00FF7B35 /* VOHowTo */ = {
 			isa = PBXGroup;
 			children = (
+				735BA4B02D87EC3200B1083F /* AccessibilityCollectionView.swift */,
 				7301C9AC2C22C0C0008A8250 /* AccessibilityCarousel.swift */,
 				73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */,
 				73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */,
 				73DE24142C1D52ED00FF7B35 /* ViewController.swift */,
 				733A5C1F2C1D84D10000BAC3 /* VC3.swift */,
+				735BA4B22D87EEE500B1083F /* CollectionVC.swift */,
 				733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */,
 				73D9650F2C2696AD0032E3AD /* BaseView.swift */,
 				73DE24402C1D530200FF7B35 /* ProcessInfo.swift */,
@@ -444,10 +450,12 @@
 			files = (
 				73DE24152C1D52ED00FF7B35 /* ViewController.swift in Sources */,
 				73DE24112C1D52ED00FF7B35 /* AppDelegate.swift in Sources */,
+				735BA4B32D87EEE500B1083F /* CollectionVC.swift in Sources */,
 				7301C9AD2C22C0C0008A8250 /* AccessibilityCarousel.swift in Sources */,
 				733A5C202C1D84D10000BAC3 /* VC3.swift in Sources */,
 				73DE24132C1D52ED00FF7B35 /* SceneDelegate.swift in Sources */,
 				7301C9AF2C22C0DB008A8250 /* AccessibilityLabel.swift in Sources */,
+				735BA4B12D87EC4800B1083F /* AccessibilityCollectionView.swift in Sources */,
 				73D965102C2696AD0032E3AD /* BaseView.swift in Sources */,
 				73DE24412C1D530200FF7B35 /* ProcessInfo.swift in Sources */,
 				733A5C232C1D87EB0000BAC3 /* AccessibilityElements.swift in Sources */,
