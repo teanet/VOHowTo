@@ -12,7 +12,7 @@
 		7301C9A92C22B724008A8250 /* AccessibilitySnapshotPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9A62C22B723008A8250 /* AccessibilitySnapshotPredicate.swift */; };
 		7301C9AD2C22C0C0008A8250 /* AccessibilityCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9AC2C22C0C0008A8250 /* AccessibilityCarousel.swift */; };
 		7301C9AF2C22C0DB008A8250 /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7301C9AE2C22C0DB008A8250 /* AccessibilityLabel.swift */; };
-		733A5C202C1D84D10000BAC3 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C1F2C1D84D10000BAC3 /* VC3.swift */; };
+		733A5C202C1D84D10000BAC3 /* StoriesExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C1F2C1D84D10000BAC3 /* StoriesExampleVC.swift */; };
 		733A5C232C1D87EB0000BAC3 /* AccessibilityElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */; };
 		735BA4B12D87EC4800B1083F /* AccessibilityCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BA4B02D87EC3200B1083F /* AccessibilityCollectionView.swift */; };
 		735BA4B32D87EEE500B1083F /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735BA4B22D87EEE500B1083F /* CollectionVC.swift */; };
@@ -59,7 +59,7 @@
 		7301C9A62C22B723008A8250 /* AccessibilitySnapshotPredicate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilitySnapshotPredicate.swift; sourceTree = "<group>"; };
 		7301C9AC2C22C0C0008A8250 /* AccessibilityCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessibilityCarousel.swift; path = ../../../v4ios/designsystem/Sources/CommonUI/Accessibility/AccessibilityCarousel.swift; sourceTree = "<group>"; };
 		7301C9AE2C22C0DB008A8250 /* AccessibilityLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabel.swift; sourceTree = "<group>"; };
-		733A5C1F2C1D84D10000BAC3 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
+		733A5C1F2C1D84D10000BAC3 /* StoriesExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesExampleVC.swift; sourceTree = "<group>"; };
 		733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElements.swift; sourceTree = "<group>"; };
 		735BA4B02D87EC3200B1083F /* AccessibilityCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityCollectionView.swift; sourceTree = "<group>"; };
 		735BA4B22D87EEE500B1083F /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				73DE24102C1D52ED00FF7B35 /* AppDelegate.swift */,
 				73DE24122C1D52ED00FF7B35 /* SceneDelegate.swift */,
 				73DE24142C1D52ED00FF7B35 /* ViewController.swift */,
-				733A5C1F2C1D84D10000BAC3 /* VC3.swift */,
+				733A5C1F2C1D84D10000BAC3 /* StoriesExampleVC.swift */,
 				735BA4B22D87EEE500B1083F /* CollectionVC.swift */,
 				733A5C222C1D87EB0000BAC3 /* AccessibilityElements.swift */,
 				73D9650F2C2696AD0032E3AD /* BaseView.swift */,
@@ -452,7 +452,7 @@
 				73DE24112C1D52ED00FF7B35 /* AppDelegate.swift in Sources */,
 				735BA4B32D87EEE500B1083F /* CollectionVC.swift in Sources */,
 				7301C9AD2C22C0C0008A8250 /* AccessibilityCarousel.swift in Sources */,
-				733A5C202C1D84D10000BAC3 /* VC3.swift in Sources */,
+				733A5C202C1D84D10000BAC3 /* StoriesExampleVC.swift in Sources */,
 				73DE24132C1D52ED00FF7B35 /* SceneDelegate.swift in Sources */,
 				7301C9AF2C22C0DB008A8250 /* AccessibilityLabel.swift in Sources */,
 				735BA4B12D87EC4800B1083F /* AccessibilityCollectionView.swift in Sources */,

@@ -3,15 +3,15 @@ import SwiftUI
 
 final class ViewController: UIViewController {
 
-	let label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
+	let label = UIView()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		print("isUITests>>>>>\(ProcessInfo.isUITests)")
+		print("isUITests: \(ProcessInfo.isUITests)")
 
 		// пример изначально недоступного label, который можно сделать кнопкой
-		self.label.accessibilityIdentifier = "label_button"
-		self.label.accessibilityLabel = "Some text"
+		self.label.accessibilityIdentifier = "red_button"
+		self.label.accessibilityLabel = "Red button"
 		self.label.isUserInteractionEnabled = true
 		self.label.backgroundColor = .red
 		self.label.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
@@ -27,23 +27,23 @@ final class ViewController: UIViewController {
 
 		let childView = UIHostingController(rootView: SwiftUIView())
 		addChild(childView)
-		childView.view.frame = CGRect(x: 100, y: 200, width: 50, height: 50)
+		childView.view.frame = CGRect(x: 100, y: 170, width: 150, height: 50)
 		self.view.addSubview(childView.view)
 		childView.didMove(toParent: self)
 
 		self.navigationItem.rightBarButtonItems = [
-			UIBarButtonItem(title: "VC3", style: .plain, target: self, action: #selector(self.showVC3)),
+			UIBarButtonItem(title: "Stories", style: .plain, target: self, action: #selector(self.showVC3)),
 			UIBarButtonItem(title: "Collection", style: .plain, target: self, action: #selector(self.showCollection)),
 		]
 	}
 
 	@objc private func showVC3() {
-		let vc = VC3(vm: VM3())
+		let vc = StoriesExampleVC(vm: StoriesExampleVM())
 		self.navigationController?.pushViewController(vc, animated: true)
 	}
 
 	@objc private func showCollection() {
-		let vc = CollectionVC(vm: VM3())
+		let vc = CollectionVC(vm: StoriesExampleVM())
 		self.navigationController?.pushViewController(vc, animated: true)
 	}
 
@@ -55,7 +55,11 @@ final class ViewController: UIViewController {
 
 struct SwiftUIView: View {
 	var body: some View {
-		Button("Action1") {}
-			.accessibilityLabel("SwiftUIButton")
+		Button {} label: {
+			Image(systemName: "figure.walk")
+		}
+		.frame(width: 150, height: 50)
+		.background(.green)
+		.accessibilityLabel("SwiftUI green walk button")
 	}
 }

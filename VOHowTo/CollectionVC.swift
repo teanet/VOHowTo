@@ -1,6 +1,6 @@
 import UIKit
 
-final class CollectionVC: BaseVC<VM3> {
+final class CollectionVC: BaseVC<StoriesExampleVM> {
 
 	private let label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
 	private let label2 = UILabel(frame: CGRect(x: 155, y: 200, width: 100, height: 100))

@@ -18,13 +18,13 @@ final class VOHowToTests: XCTestCase {
 		self.uiTester.showChild(vc)
 
 		expect(vc.view).to(haveAccessibilityHierarchyOfElements([
-			.label("Some text. Button."),
-			.label("SwiftUIButton. Button."),
+			.label("Red button. Button."),
+			.label("SwiftUI green walk button. Button."),
 		]))
 	}
 
 	func test_проверяем_корректные_label_для_vc() throws {
-		let vc = VC3(vm: VM3())
+		let vc = StoriesExampleVC(vm: StoriesExampleVM())
 		self.uiTester.showChild(vc)
 
 		// подождем пока collection view загрузит ячейки

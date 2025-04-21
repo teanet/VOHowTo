@@ -1,6 +1,29 @@
 import UIKit
 
-final class VC3: BaseVC<VM3> {
+final class Cell: UITableViewCell {
+
+	struct ViewModel {
+		var label = "label"
+	}
+
+	var viewModel = ViewModel()
+
+	override var accessibilityLabel: String? {
+		get { viewModel.label }
+		set {}
+	}
+
+	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
+		self.isAccessibilityElement = !ProcessInfo.isUITests
+	}
+
+	required init?(coder: NSCoder) {
+		fatalError("init(coder:) has not been implemented")
+	}
+}
+
+final class StoriesExampleVC: BaseVC<StoriesExampleVM> {
 
 	private let label = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
 	private let label2 = UILabel(frame: CGRect(x: 155, y: 200, width: 100, height: 100))
@@ -104,7 +127,9 @@ class BaseCell: UICollectionViewCell {
 	}
 }
 
-extension VC3: UICollectionViewDataSource, UICollectionViewDelegate {
+final class StoriesExampleVM: BaseVM {}
+
+extension StoriesExampleVC: UICollectionViewDataSource, UICollectionViewDelegate {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		5000
 	}

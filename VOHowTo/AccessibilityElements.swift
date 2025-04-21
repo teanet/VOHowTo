@@ -35,9 +35,3 @@ public extension Array where Element: UIView {
 		return elements
 	}
 }
-
-
-
-class VM3: BaseVM {
-
-}
