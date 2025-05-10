@@ -35,6 +35,20 @@ final class ViewController: UIViewController {
 			UIBarButtonItem(title: "Stories", style: .plain, target: self, action: #selector(self.showVC3)),
 			UIBarButtonItem(title: "Collection", style: .plain, target: self, action: #selector(self.showCollection)),
 		]
+
+		let cardView1 = CardView(
+			frame: CGRect(x: 10, y: 230, width: self.view.bounds.width - 20, height: 250),
+			isAccessibilityElement: false,
+			viewModel: CardViewVM()
+		)
+		self.view.addSubview(cardView1)
+
+		let cardView2 = CardView(
+			frame: CGRect(x: 10, y: 230 + 260, width: self.view.bounds.width - 20, height: 250),
+			isAccessibilityElement: true,
+			viewModel: CardViewVM()
+		)
+		self.view.addSubview(cardView2)
 	}
 
 	@objc private func showVC3() {

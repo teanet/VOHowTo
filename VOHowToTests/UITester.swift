@@ -3,6 +3,7 @@ import KIF
 public final class UITester {
 	private let testActor: KIFUITestActor
 	private weak var presentedVC: UIViewController?
+	private weak var presentedView: UIView?
 
 	init(file: String, line: Int, delegate: KIFTestActorDelegate) {
 		self.testActor = KIFUITestActor(inFile: file, atLine: line, delegate: delegate)
@@ -11,6 +12,12 @@ public final class UITester {
 	func showChild(_ vc: UIViewController) {
 		self.presentedVC = vc
 		UIApplication.shared.activeSceneKeyWindow?.rootViewController?.showChild(vc)
+	}
+
+	func showView(_ view: UIView) {
+		self.presentedView = view
+		UIApplication.shared.activeSceneKeyWindow?.addSubview(view)
+		view.layoutIfNeeded()
 	}
 
 	func waitForView(identifier: String) {
@@ -35,6 +42,7 @@ public final class UITester {
 
 	func tearDownWithError() throws {
 		self.presentedVC?.dgs_removeFromParent()
+		self.presentedView?.removeFromSuperview()
 	}
 }
 
@@ -45,6 +53,7 @@ extension UIViewController {
 		self.addChild(vc)
 		vc.view.frame = self.view.bounds
 		self.view.addSubview(vc.view)
+		vc.view.layoutIfNeeded()
 		vc.didMove(toParent: self)
 	}
 

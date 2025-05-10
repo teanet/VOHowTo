@@ -44,6 +44,13 @@ final class VOHowToTests: XCTestCase {
 			.label("Какой то бесконечный список: ячейка, 1, 1 из 5000. Button. Adjustable."),
 			.label("Some text. Button."),
 		]))
+
+		expect(vc.view).to(haveAccessibilityHierarchyOfElements([
+			.label("Label 1"),
+			.label("Label 2"),
+			.label("Label 3"),
+			.label("Button. Button."),
+		]))
 	}
 
 }
