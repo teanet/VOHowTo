@@ -7,14 +7,6 @@ class CardViewVM: NSObject {
 	var ratingCount: Int = 152
 	var details: String? = "Автомойки самообслуживания для легковых автомобилей"
 
-	var ratingTitle: String {
-		"Rating: \(rating)"
-	}
-
-	var ratingCountTitle: String {
-		"Rating count: \(ratingCount)"
-	}
-
 	var duration: TimeInterval = 17 * 60
 
 	var durationTitle: String? {
@@ -22,6 +14,9 @@ class CardViewVM: NSObject {
 		formatter.allowedUnits = [.minute, .second]
 		formatter.unitsStyle = .abbreviated
 		return formatter.string(from: duration) ?? ""
+	}
+	var ratingCountTitle: String {
+		"Rating count: \(ratingCount)"
 	}
 
 	var durationAccessibilityTitle: String? {
@@ -45,6 +40,12 @@ class CardViewVM: NSObject {
 		}
 		set {}
 	}
+
+
+	private var ratingTitle: String {
+		"Rating: \(rating)"
+	}
+
 }
 
 final class CardView: UIView {
@@ -103,8 +104,12 @@ final class CardView: UIView {
 		ratingStack.distribution = .equalSpacing
 		vStack.addArrangedSubview(ratingStack)
 
+		let stars = UIImageView(image: UIImage.starsExample)
+		stars.isAccessibilityElement = true
+		ratingStack.addArrangedSubview(stars)
+
 		let ratingTitle = UILabel()
-		ratingTitle.text = viewModel.ratingTitle
+		ratingTitle.text = "\(viewModel.rating)"
 		ratingStack.addArrangedSubview(ratingTitle)
 
 		let ratingCount = UILabel()
@@ -112,6 +117,7 @@ final class CardView: UIView {
 		ratingStack.addArrangedSubview(ratingCount)
 
 		let routeIcon = UIImageView(image: UIImage(systemName: "car"))
+		routeIcon.isAccessibilityElement = true
 		ratingStack.addArrangedSubview(routeIcon)
 
 		let duration = UILabel()

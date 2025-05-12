@@ -14,7 +14,7 @@ final class CardViewTests: XCTestCase {
 		let viewModel = CardViewVM()
 		viewModel.duration = 17 * 60
 		let cardView = CardView(
-			frame: CGRect.init(
+			frame: CGRect(
 				x: 0,
 				y: 0,
 				width: 320,
@@ -58,9 +58,11 @@ final class CardViewTests: XCTestCase {
 			.label("icon 4. Image."),
 			.label("Аквасервис"),
 			.label("Мойка самообслуживания"),
-			.label("Rating: 2.2"),
+			.label("Image."),
+			.label("2.2"),
 			.label("Rating count: 152"),
-			.label("17m"),
+			.label("18m"),
+			.label("car. Image."),
 			.label("Автомойки самообслуживания для легковых автомобилей"),
 		]))
 	}
